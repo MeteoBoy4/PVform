@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{bm}
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+
+\begin{document}
+
+\title{Doubt on the approximation of PV formulation}
+\author{Li Chiqin}
+\maketitle
+
+The definition we use in PV calculation is
+\begin{equation}
+    q = -g\eta\frac{\partial{\theta}}{\partial{p}} + g(\frac{\partial{v}}{\partial{p}}
+    \frac{\partial{\theta}}{\partial{x}} - \frac{\partial{u}}{\partial{p}} \frac{\partial{\theta}}{\partial{y}})
+\end{equation}
+
+From the definition of PV in isentropic coordinate
+\begin{equation}
+    P \equiv (\zeta_{\theta} + f)(-g \frac{\partial{\theta}}{\partial{p}})
+\end{equation}
+and we use the coordinate transform
+\begin{gather}
+    \Big(\frac{\partial{u}}{\partial{y}}\Big)_{\theta} = \Big(\frac{\partial{u}}{\partial{y}}\Big)_{p}
+    + \Big(\frac{\partial{u}}{\partial{p}}\Big) \Big(\frac{\partial{p}}{\partial{y}}\Big)_{\theta}\\
+    \Big(\frac{\partial{v}}{\partial{x}}\Big)_{\theta} = \Big(\frac{\partial{v}}{\partial{x}}\Big)_{p}
+    + \Big(\frac{\partial{v}}{\partial{p}}\Big) \Big(\frac{\partial{p}}{\partial{x}}\Big)_{\theta}
+\end{gather}
+substituting (3),(4) into (2), in order to get the form of (1), we need to establish equation like:
+\begin{equation}
+    \frac{\partial{v}}{\partial{p}} \Big(\frac{\partial{p}}{\partial{x}}\Big)_{\theta}
+    \frac{\partial{\theta}}{\partial{p}} \equiv \frac{\partial{v}}{\partial{p}} \Big(\frac{\partial{\theta}}{\partial{x}}\Big)_{p}
+\end{equation}
+However, since the isobar and isentropic line are not perpendicular, the identity should not be accurately right,
+is this where the approximation of PV take place? If so, the PV should not be conservative in accurate sense?
+
+
+
+
+
+\end{document}
